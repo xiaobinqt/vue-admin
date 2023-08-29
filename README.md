@@ -2,5 +2,4 @@
 
 ## 参考
 
-+ [CSS Tools: Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
-
+- [CSS Tools: Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
