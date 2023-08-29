@@ -1,7 +1,18 @@
 <template>
-  <h1>我是 App</h1>
+  <div>
+    <h1>svg 测试</h1>
+    <SvgIcon name="home"></SvgIcon>
+  </div>
 </template>
 
-<script setup lang="ts"></script>
+<script lang="ts" setup></script>
 
-<style scoped></style>
+<!--<script setup lang="ts">-->
+<!--import { Edit } from '@element-plus/icons-vue'-->
+<!--</script>-->
+
+<style scoped lang="scss">
+h1 {
+  color: $color;
+}
+</style>

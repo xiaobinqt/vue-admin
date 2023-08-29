@@ -31,7 +31,6 @@ module.exports = {
 
         // typeScript (https://typescript-eslint.io/rules)
         '@typescript-eslint/no-unused-vars': 'error', // 禁止定义未使用的变量
-        '@typescript-eslint/prefer-ts-expect-error': 'error', // 禁止使用 @ts-ignore
         '@typescript-eslint/no-explicit-any': 'off', // 禁止使用 any 类型
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-namespace': 'off', // 禁止使用自定义 TypeScript 模块和命名空间。
@@ -42,5 +41,8 @@ module.exports = {
         'vue/script-setup-uses-vars': 'error', // 防止<script setup>使用的变量<template>被标记为未使用
         'vue/no-mutating-props': 'off', // 不允许组件 prop的改变
         'vue/attribute-hyphenation': 'off', // 对模板中的自定义组件强制执行属性命名样式
+
+        // '@typescript-eslint/prefer-ts-expect-error': 'error', // 禁止使用 @ts-ignore
+        '@typescript-eslint/ban-ts-comment': 'off', // 允许 @ts-ignore 注释
     },
 }
