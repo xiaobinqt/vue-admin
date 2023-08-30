@@ -15,7 +15,8 @@ import GlobalComponent from '@/components/index.ts'
 
 // 引入模版全局样式
 import '@/styles/index.scss'
-// 测试接口
+
+import router from '@/router/index.ts'
 
 const app = createApp(App)
 
@@ -25,6 +26,8 @@ app.use(GlobalComponent)
 app.use(ElementPlus, {
   locale: zhCn,
 })
+
+app.use(router)
 
 // axios({
 //   url: '/api/user/login',
