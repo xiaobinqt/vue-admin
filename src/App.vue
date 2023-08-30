@@ -1,11 +1,20 @@
 <template>
   <div>
-    <h1>svg 测试</h1>
-    <SvgIcon name="home"></SvgIcon>
+    <h1>测试 Axios</h1>
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { reqLogin } from '@/api/user'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  reqLogin({
+    username: 'admin',
+    password: '111111',
+  })
+})
+</script>
 
 <!--<script setup lang="ts">-->
 <!--import { Edit } from '@element-plus/icons-vue'-->
