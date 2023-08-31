@@ -18,10 +18,16 @@ import '@/styles/index.scss'
 
 import router from '@/router/index.ts'
 
+// pinia 仓库
+
+import pinia from '@/store/index.ts'
+
 const app = createApp(App)
 
 app.use(GlobalComponent)
 // console.log(GlobalComponent)
+
+app.use(pinia)
 
 app.use(ElementPlus, {
   locale: zhCn,
